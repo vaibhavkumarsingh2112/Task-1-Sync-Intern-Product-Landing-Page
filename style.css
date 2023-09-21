@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 100%;
+
+}
+
+
+/* Navbar */
+.navbar{
+   width: 100%;
+   height: 80px;
+   background-color:hsl(0, 0%, 100%);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    font-size:x-large;
+    font-weight:700 ;
+    z-index: 99999;
+    
+}
+.left{
+    width: 30%;
+    padding: 10px 35px;
+    font-family: cursive;
+}
+.left:hover{
+    cursor: pointer;
+
+}
+.right{
+    width: 60%;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: all ease .5s;
+}
+a:hover{
+    color: coral;
+}
+
+
+#land{
+
+    width: 100%;
+   background-image: url("landing.jpg");
+
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  display: flex;
+  align-items:flex-start;
+  position: relative;
+  
+
+}
+
+h1{
+    margin-top: 150px;
+    color: white;
+    font-size: 10vw;
+    margin-left: 20px;
+}
+h1 span{
+    color: white;
+}
+.auto-type{
+  color: rgb(255, 97, 39);
+}
+
+button{
+    font-size: 1.5vw;
+    padding: 1.5vw 2.3vw;
+    background-color: #d54a34;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 650;
+    font-size: 1.5vh;
+    padding: 1.5vh 2.3vh;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+button a{
+    text-decoration: none;
+    font-size: 24px;
+    color:white;
+    font-weight: 750;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all ease .8s;
+}
+button :hover{
+ transform: scale(2);
+}
+
+.main-container {
+  display: flex;
+
+  overflow: hidden;
+  width: 100%; 
+  height: 550px;
+  position: relative;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+ gap: 10px;
+  animation: circularQueue 10s linear infinite; 
+  background-color: rgb(77, 69, 69);
+}
+
+.card {
+  width: 250px; 
+  height: 340px; 
+  margin: 10 10px;
+  padding: 10px 10px;
+
+  background-color: #a02929; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, filter 0.5s;
+  transition: all ease .8s;
+
+  
+}
+
+@keyframes circularQueue {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-150px); 
+  }
+  50% {
+    transform: translateX(-300px); 
+  }
+  75% {
+    transform: translateX(-450px); 
+  }
+}
+
+.card.center {
+  transform: scale(1); 
+  z-index: 2;
+}
+
+.card:hover{
+  scale: 1.25 1.25;
+  z-index: 99;
+
+
+}
+
+#card1{
+  background-image: url("card1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+}
+
+#card2{
+  background-image: url("card2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+}
+#card3{
+  background-image: url("card3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#card4{
+  background-image: url("card4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#card5{
+  background-image: url("card5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#card6{
+  background-image: url("card6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#card7{
+  background-image: url("card.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+ justify-content: space-evenly;
+  align-items: center;
+
+}
+.card h1{
+  color: white;
+  font-size:larger;
+  font-weight: 600;
+ 
+
+}
+.card p{
+  font-size: large;
+  color: white;
+  font-weight: 400;
+  width: 80%;
+}
+
+
+
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  font-size: 100px;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 10px 10px 20px #000000;
+  color: white;
+  background-color: rgb(77, 69, 69);
+}
+
+/* contact page */
+
+.contact{
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+}
+.contactinner{
+  width: 100%;
+  height: 100%;
+  background-image: url("contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+#contact-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  font-size: 100px;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 10px 10px 20px #000000;
+  color: white;
+
+ 
+  text-align: center;
+  font-size: 10vw;
+  
+
+}
+
+/* form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #7c817f;
+  font-size: x-large;
+  font-weight: 700;
+  color: black;
+}
+
+input[type=submit] {
+  background-color: #3d413f;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease .4s;
+}
+
+input[type=submit]:hover {
+  background-color: #030303;
+  color: white;
+}
+input[type=text]:hover{
+  background-color: white;
+  cursor: pointer;
+}
+textarea:hover{
+  background-color: white;
+  cursor: pointer;
+}
+select:hover{
+  background-color: white;
+  cursor: pointer;
+
+}
+
+.containerform {
+
+  background-color:#d5d4cf;
+  padding: 20px;
+  width: 60%;
+  height: 92%;
+ 
+}
+
+.formimg{
+  width: 80%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100%-200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contactimg{
+  background-image: url("contactform.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  width: 40%;
+  height: 100%;
+
+}
+@media screen and (max-width: 500px) {
+
+  .contactimg{
+    display: none;
+  }
+  .containerform{
+    width: 85%;
+    border-radius: 10px;
+  }
+}
+
+
+
+.dash div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  
+}
+.dash{
+  display: none;
+  margin-right: 20px;
+}
+.dash:hover{
+  cursor: pointer;
+
+}
+@media screen and (max-width: 500px) {
+.dash{
+display: block;
+}
+.right{
+display: none;
+
+}
+
+button{
+  top: 250px;
+  padding: 10px;
+  font-size:medium;
+
+}
+}
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+text-align:center;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 500px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
